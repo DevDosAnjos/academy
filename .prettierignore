@@ -1,0 +1,7 @@
+dist
+node_modules
+pnpm-lock.yaml
+docs
+specs
+src/shared/components/ui
+*.md
