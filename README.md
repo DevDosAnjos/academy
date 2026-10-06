@@ -2,7 +2,7 @@
 
 Front-end do **Sistema de Gestão para Academia de Jiu-Jitsu**: alunos, aulas, graduações, mensalidades e avisos.
 
-> **Situação:** planejamento. O código ainda não foi criado. A preparação do projeto está na [Sprint 00](https://github.com/DevDosAnjos/Academy/milestone/1).
+> **Situação:** em preparação. O esqueleto do projeto existe (Vite, React, TypeScript e shadcn/ui); as telas ainda não. A preparação do projeto está na [Sprint 00](https://github.com/DevDosAnjos/Academy/milestone/1).
 
 ## O sistema
 
@@ -23,6 +23,22 @@ A gestão é o centro: quase tudo nasce nela. O portal mostra ao aluno e ao resp
 - TypeScript, React e Vite
 - shadcn/ui, com Tailwind CSS e Radix
 - [MSW](https://mswjs.io/) para simular a API. Os handlers de cada fase são o mapa da API que o front espera.
+
+## Como rodar
+
+Precisa de Node 24 (veja `.nvmrc`) e pnpm.
+
+```bash
+pnpm install         # instala as dependências
+cp .env.example .env # variáveis de ambiente (só nomes; preencha local, sem segredos)
+pnpm dev             # sobe em http://localhost:5173
+pnpm lint            # ESLint (inclui acessibilidade com jsx-a11y)
+pnpm typecheck       # TypeScript
+pnpm format:check    # Prettier (use pnpm format para corrigir)
+pnpm build           # gera dist/
+```
+
+A publicação será definida no item #8.
 
 ## Documentação
 
