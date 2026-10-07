@@ -10,7 +10,7 @@ Sprint liberada: Sprint 00. Só o dono libera a seguinte.
 | 3 | [Preparação] Base visual do canvas em código: tokens e tema | issue #3 | Sprint 00 | — | agente | feito |
 | 4 | [Preparação] Rotas, áreas e proteção por sessão e perfil | issue #4 | Sprint 00 | — | agente | feito |
 | 5 | [Preparação] Cliente da API e contrato com o back-end | issue #5 | Sprint 00 | — | agente | feito |
-| 6 | [Preparação] Mocks da API com MSW (Mock Service Worker) | issue #6 | Sprint 00 | — | agente | a fazer |
+| 6 | [Preparação] Mocks da API com MSW (Mock Service Worker) | issue #6 | Sprint 00 | — | agente | feito |
 | 7 | [Preparação] Formulários, validação e formatos brasileiros | issue #7 | Sprint 00 | — | agente | a fazer |
 | 8 | [Preparação] Testes, qualidade e publicação automática | issue #8 | Sprint 00 | — | agente | a fazer |
 | 9 | [Preparação] Dados fictícios e contas de teste | issue #9 | Sprint 00 | — | agente | a fazer |
