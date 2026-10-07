@@ -7,7 +7,7 @@ Lido em toda sessão de todo agente. Manter curto: fatos e comandos.
 - O que é: front-end do sistema de gestão de academia de Jiu-Jitsu (gestão, portal do aluno, site e acesso). Especificação: `specs/projeto.md`.
 - Dono: Nathan (DevNathan). Stack: TypeScript, React, Vite, shadcn/ui (Tailwind, Radix), MSW. Máquina com Node v24.21.0, pnpm 12.9.1 e npm 11.19.0.
 - Backlog: `specs/backlog.md`. Itens: `specs/itens/`. Fontes: issues do GitHub e guias em `docs/` (um arquivo por fase).
-- Estrutura: app Vite na raiz. `src/{site,acesso,gestao,portal}` por área e `src/shared/{components,api,formats,lib}` (shadcn em `src/shared/components/ui`). Atalho `@/` = `src/`. Variáveis em `.env.example` (`VITE_API_URL`, `VITE_USE_MOCKS`).
+- Estrutura: app Vite na raiz. `src/{site,acesso,gestao,portal}` por área e `src/shared/{components,api,formats,lib}` (shadcn em `src/shared/components/ui`). Atalho `@/` = `src/`. Rotas em `src/router.tsx` (React Router, cada área em bloco `lazy`): site `/`; acesso `/entrar`, `/primeiro-acesso`, `/nova-senha`; gestão `/gestao`, `/gestao/configuracoes` (só Administrador); portal `/portal`. Guarda `RequireAccess` + `decideAccess` (`src/shared/lib/access.ts`); `?voltar=` só aceita caminho interno. Sessão simulada em `sessionStorage` (`src/shared/lib/session.ts`, botões de entrada só em `pnpm dev`), trocada pela real no item #17. Área compartilhada (`src/shared`) nunca importa de `gestao` ou `portal`. Variáveis em `.env.example` (`VITE_API_URL`, `VITE_USE_MOCKS`).
 - Telas: `docs/gestao/telas/`, `docs/portal/telas/{desktop,mobile}/`, `docs/site-e-acesso/telas/{desktop,mobile}/` (PNG, 83 no total, abertos direto do repositório). Canvas: https://claude.ai/artifact/TXG9EGaFortgEQtvqHfRAm (não conferido).
 
 ## Comandos
