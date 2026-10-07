@@ -2,6 +2,8 @@
 
 > Sistema de Gestão para Academia de Jiu-Jitsu · Versão 1.0 · 2 de outubro de 2026 · Arquivo 1 de 3 · os outros dois tratam do Portal do aluno e do Site e acesso
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 Ordem de desenvolvimento, requisitos funcionais e não funcionais, regras de negócio e casos de uso, módulo por módulo.
 
 | **25** | **183** | **144** | **37** | **26** |
@@ -81,7 +83,7 @@ A ideia central do projeto é que o usuário consiga olhar, entender a situaçã
 - Resultado da aula experimental.
 - Loja, ranking e chat.
 - Gestão no celular e gestão de várias unidades.
-- Portal do aluno e site público. Cada um tem o seu arquivo.
+- ~~Portal do aluno e site público. Cada um tem o seu arquivo.~~ _Atualização:_ Portal do aluno e acesso. Cada um tem o seu arquivo.
 
 ### Padrões de tela
 
@@ -213,7 +215,7 @@ São 25 fases, agrupadas em seis etapas. A ordem segue as dependências: nada é
 | **09** | Comunicação › Grupos | Fase 6. |
 | **10** | Comunicação › Comunicados | Fases 7 e 9 e o serviço de e-mail da Fase 1. |
 | **11** | Operação › Agenda de aulas | Fases 4, 6 e 10. |
-| **12** | Operação › Aulas experimentais | Fases 6 e 11. O pedido pelo site depende do arquivo “Site e acesso”. |
+| **12** | Operação › Aulas experimentais | ~~Fases 6 e 11. O pedido pelo site depende do arquivo “Site e acesso”.~~ _Atualização:_ Fases 6 e 11. O pedido pelo site saiu do escopo. |
 
 **Etapa D · Financeiro**
 
@@ -230,7 +232,7 @@ São 25 fases, agrupadas em seis etapas. A ordem segue as dependências: nada é
 | --- | --- | --- |
 | **17** | Início | Fases 7, 11, 12 e 14. |
 | **18** | Visão do professor | Fases 7, 8, 10, 11 e 17. |
-| **19** | Notificações | Fases 12 e 14. Parte dos avisos vem do portal e do site. |
+| **19** | Notificações | ~~Fases 12 e 14. Parte dos avisos vem do portal e do site.~~ _Atualização:_ Fases 12 e 14. Parte dos avisos vem do portal. |
 | **20** | Busca no menu | Fase 17, quando a maior parte das telas já existe. |
 | **21** | Relatórios | Fases 7 e 14. Para ter meses antigos, também a Fase 23. |
 | **22** | Configurações › Histórico de alterações | Fase 1. O registro existe desde o começo. Esta fase entrega a tela. |

@@ -2,6 +2,8 @@
 
 > Guia: Site e acesso · Etapa B · Site público · código `SIT` · [índice do guia](README.md)
 
+> **Fora do escopo desde 07/10/2026 (issue #14).** O site público de cada academia saiu do escopo e esta fase não será feita. No lugar dele entra a landing page da plataforma (#96). O texto abaixo fica só como registro.
+
 - **Objetivo:** Apresentar a academia a quem ainda não é aluno e levar a pessoa ao pedido de aula experimental, ao WhatsApp e ao login.
 - **Depende de:** Gestão, Fase 2 (dados da academia e opção “Site publicado”). Fase 1 deste guia, para o botão “Entrar”.
 - **Quem usa:** Visitante, sem login. O administrador controla a publicação pela gestão.

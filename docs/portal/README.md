@@ -2,6 +2,8 @@
 
 > Sistema de Gestão para Academia de Jiu-Jitsu · Versão 1.0 · 2 de outubro de 2026 · Arquivo 2 de 3 · o primeiro trata da Gestão e o terceiro, do Site e acesso
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 Ordem de desenvolvimento, requisitos funcionais e não funcionais, regras de negócio e casos de uso do portal usado por alunos e responsáveis.
 
 | **8** | **57** | **56** | **13** | **23** |
@@ -82,7 +84,7 @@ Ele é usado no computador e no celular. Este guia segue as telas do computador 
 - Matrícula online, contrato e termo de responsabilidade.
 - Cadastro aberto. A conta sempre nasce de um convite da gestão.
 - Aplicativo instalado. O portal abre no navegador.
-- Login, Primeiro acesso e site público. Eles estão no arquivo “Site e acesso”.
+- ~~Login, Primeiro acesso e site público. Eles estão no arquivo “Site e acesso”.~~ _Atualização:_ Login e Primeiro acesso estão no arquivo “Site e acesso”. O site público saiu do escopo.
 
 ## Decisões em aberto
 

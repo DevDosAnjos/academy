@@ -2,6 +2,8 @@
 
 > Guia: Gestão · Etapa A · Fundação · código `BAS` · [índice do guia](README.md)
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 - **Objetivo:** Deixar pronto tudo o que as outras fases reaproveitam: entrar no sistema, saber quem é o usuário e o que ele pode fazer, o menu lateral, os padrões de tela e o registro do que foi alterado.
 - **Depende de:** Fase 0 (decisões técnicas e ambiente).
 - **Quem usa:** Todos os usuários da gestão.
@@ -15,7 +17,7 @@
 ## Dados
 
 - Usuário: nome, e-mail, senha (guardada com hash), perfil (Administrador ou Professor), status (Convite enviado, Ativo, Inativo), último acesso.
-- Registro de auditoria: data e hora, quem fez (usuário da gestão, portal ou site público), ação, onde (tela e registro), valor antes e depois.
+- Registro de auditoria: data e hora, quem fez ~~(usuário da gestão, portal ou site público)~~ _Atualização:_ (usuário da gestão ou do portal), ação, onde (tela e registro), valor antes e depois.
 
 ## Passo a passo
 

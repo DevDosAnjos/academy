@@ -1,5 +1,7 @@
 # Documentação
 
+
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
 Guias de desenvolvimento do **Sistema de Gestão para Academia de Jiu-Jitsu**, versão 1.0, de 2 de outubro de 2026.
 
 ## Por onde começar
@@ -9,7 +11,7 @@ Guias de desenvolvimento do **Sistema de Gestão para Academia de Jiu-Jitsu**, v
 | [Visão geral](visao-geral.md) | Resumo dos três guias: o que o sistema faz, como as partes se ligam, a ordem de construção e as decisões em aberto. |
 | [Gestão](gestao/README.md) | Painel do administrador e do professor. 25 fases. |
 | [Portal do aluno](portal/README.md) | Área do aluno e do responsável. 8 fases. |
-| [Site e acesso](site-e-acesso/README.md) | Site público, login, primeiro acesso e recuperação de senha. 6 fases. |
+| [Site e acesso](site-e-acesso/README.md) | ~~Site público, login, primeiro acesso e recuperação de senha. 6 fases.~~ _Atualização:_ Login, primeiro acesso e recuperação de senha, e a landing page da plataforma (#96). 3 fases; as fases 4 a 6, do site público, saíram do escopo. |
 
 ## Como está organizado
 
@@ -87,9 +89,9 @@ Guias de desenvolvimento do **Sistema de Gestão para Academia de Jiu-Jitsu**, v
 | 01 | `LGN` | [Acesso › Login e sessão](site-e-acesso/fase-01-login-e-sessao.md) |
 | 02 | `PAC` | [Acesso › Primeiro acesso](site-e-acesso/fase-02-primeiro-acesso.md) |
 | 03 | `SEN` | [Acesso › Recuperar senha](site-e-acesso/fase-03-recuperar-senha.md) |
-| 04 | `SIT` | [Site público › Página da academia](site-e-acesso/fase-04-pagina-da-academia.md) |
-| 05 | `HEQ` | [Site público › Horários e equipe](site-e-acesso/fase-05-horarios-e-equipe.md) |
-| 06 | `EXS` | [Site público › Pedido de aula experimental](site-e-acesso/fase-06-pedido-de-aula-experimental.md) |
+| ~~04~~ | ~~`SIT`~~ | ~~[Site público › Página da academia](site-e-acesso/fase-04-pagina-da-academia.md)~~ _Removido do escopo (#14)._ |
+| ~~05~~ | ~~`HEQ`~~ | ~~[Site público › Horários e equipe](site-e-acesso/fase-05-horarios-e-equipe.md)~~ _Removido do escopo (#14)._ |
+| ~~06~~ | ~~`EXS`~~ | ~~[Site público › Pedido de aula experimental](site-e-acesso/fase-06-pedido-de-aula-experimental.md)~~ _Removido do escopo (#14)._ |
 
 ## Sobre a conversão
 

@@ -158,3 +158,10 @@ Achados:
 - Limitações: sessão é simulada até o item #17; sugestões em aberto para o #17 (`state.signOut`, recusar `\t`, `\n`, `\r` em `safeReturnPath`).
 
 Refs #4
+
+## Atualização — decisão da #14 (07/10/2026)
+
+Nota acrescentada depois da entrega; o texto acima não foi alterado.
+
+- O endereço continua único, agora para todas as academias, com login único; a academia vem do login. D2 vale como está.
+- A área `site` deixa de ser o site de uma academia e passa a ser a landing page da plataforma (#96): o `/` continua sendo a página inicial, hoje vazia. O site público por academia saiu do escopo.

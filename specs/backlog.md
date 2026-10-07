@@ -21,7 +21,7 @@ Sprint liberada: Sprint 00. Só o dono libera a seguinte.
 | 17 | [Site e acesso · F01] Acesso › Login e sessão | issue #17 | Sprint 01 | 4, 5, 16 | agente | a fazer |
 | 18 | [Design] Telas que faltam para a Sprint 02: academia e site no ar | issue #18 | Sprint 01 | — | pessoa (design) | a fazer |
 | 20 | [Gestão · F02] Configurações › Academia | issue #20 | Sprint 02 | 16 | agente | a fazer |
-| 21 | [Site e acesso · F04] Site público › Página da academia | issue #21 | Sprint 02 | 20, 17 | agente | a fazer |
+| 96 | [Site e acesso] Landing page da plataforma | issue #96 | Sprint 02 | 17 | agente | a fazer |
 | 22 | [Design] Telas que faltam para a Sprint 03: usuários, convites e senha | issue #22 | Sprint 02 | — | pessoa (design) | a fazer |
 | 24 | [Gestão · F03] Configurações › Usuários e permissões | issue #24 | Sprint 03 | 16, 20 | agente | a fazer |
 | 25 | [Site e acesso · F02] Acesso › Primeiro acesso | issue #25 | Sprint 03 | 17, 24 | agente | a fazer |
@@ -37,10 +37,8 @@ Sprint liberada: Sprint 00. Só o dono libera a seguinte.
 | 39 | [Gestão · F10] Comunicação › Comunicados | issue #39 | Sprint 06 | 33, 38 | agente | a fazer |
 | 40 | [Design] Telas que faltam para a Sprint 07: agenda de aulas e horários no site | issue #40 | Sprint 06 | — | pessoa (design) | a fazer |
 | 43 | [Gestão · F11] Operação › Agenda de aulas | issue #43 | Sprint 07 | 29, 31, 39 | agente | a fazer |
-| 44 | [Site e acesso · F05] Site público › Horários e equipe | issue #44 | Sprint 07 | 21, 29, 31, 43 | agente | a fazer |
 | 45 | [Design] Telas que faltam para a Sprint 08: aulas experimentais e pedido pelo site | issue #45 | Sprint 07 | — | pessoa (design) | a fazer |
 | 47 | [Gestão · F12] Operação › Aulas experimentais | issue #47 | Sprint 08 | 31, 43 | agente | a fazer |
-| 48 | [Site e acesso · F06] Site público › Pedido de aula experimental | issue #48 | Sprint 08 | 21, 47 | agente | a fazer |
 | 49 | [Design] Telas que faltam para a Sprint 09: benefícios e mensalidades | issue #49 | Sprint 08 | — | pessoa (design) | a fazer |
 | 51 | [Gestão · F13] Financeiro › Planos e benefícios › Descontos e bolsas | issue #51 | Sprint 09 | 30, 33 | agente | a fazer |
 | 52 | [Gestão · F14] Financeiro › Mensalidades | issue #52 | Sprint 09 | 33, 51 | agente | a fazer |
@@ -83,16 +81,13 @@ Notas: as issues #83 a #85 (revisão) não declaram dependência, mas só fazem 
 |---|---|---|---|---|
 | P1 | Confirmar todas as propostas [sugestão] como estão nos guias (issue #12) | Adotar a proposta da issue | nenhum | Vale o que está escrito no guia. |
 | P2 | Como entregar o site público no Vite: pré-renderizar (proposta), app único com meta fixa no HTML ou projeto separado? (issue #13) | Adotar a proposta da issue | nenhum | App único com título, descrição e imagem fixos no HTML inicial e código de cada área carregado em separado. |
-| P3 | Qual o endereço do site e dos endereços de login, gestão e portal? (issue #14) | Adotar a proposta da issue | nenhum | Um endereço só, com o site na página inicial. |
 | P5 | Prazos de convite, sessão e link de senha; exigências da senha; tentativas e bloqueio; suporte nas telas de erro (issue #19) | Adotar a proposta da issue | nenhum | Valores provisórios; senha 8+ com letra e número; 5 tentativas e 15 min. |
-| P6 | Textos, números, modalidades do site e como fica o site desligado (issue #23) | Adotar a proposta da issue | nenhum | Conteúdo fixo em um só lugar, só Infantil/Juvenil/Adulto; sem números de exemplo; site desligado mostra nome, contato e Entrar. |
 | P7 | Perfis de acesso editáveis? (issue #28) | Adotar a proposta da issue | nenhum | Dois perfis fixos: Administrador e Professor. |
 | P8 | Mais de uma turma para o mesmo tipo e período? (issue #32) | Adotar a proposta da issue | nenhum | Uma turma por combinação na tela; o banco não impede. |
 | P9 | Fluxo de matrícula (de aula experimental a aluno) (issue #35) | Adotar a proposta da issue | nenhum | Cadastro simples e importação; "Registrar como aluno" não é construído. |
 | P10 | Aluno treina em vários horários? (issue #36) | Adotar a proposta da issue | nenhum | Turma principal mais outros horários, como no desenho. |
 | P11 | Envio automático pelo WhatsApp? (issue #41) | Adotar a proposta da issue | nenhum | Portal e e-mail automáticos; WhatsApp abre a conversa com mensagem pronta. |
 | P12 | Lista de faixas e graus de crianças e jovens (issue #42) | Adotar a proposta da issue | nenhum | Faixas do desenho em lista configurável, graus 0 a 4. |
-| P13 | Equipe no site: função, ordem, destaque e consentimento (issue #46) | Adotar a proposta da issue | nenhum | Função do cadastro, ordem alfabética, sem destaque. |
 | P14 | Política de privacidade, LGPD e guarda de dados (issue #50) | Adotar a proposta da issue | nenhum | Guardar pedidos sem apagar; validar com o jurídico antes de divulgar. |
 | P15 | Como combinar benefícios de um mesmo aluno (issue #53) | Adotar a proposta da issue | nenhum | Decisão caso a caso na tela Gerar cobranças do mês. |
 | P16 | Pagamento parcial, juros e multa (issue #54) | Adotar a proposta da issue | nenhum | Só valor inteiro, sem juros nem multa. |

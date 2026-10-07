@@ -4,7 +4,7 @@ Diz o que o produto é e como ele é construído. O detalhe de cada entrega fica
 
 ## 1. Objetivo
 
-Front-end do Sistema de Gestão para Academia de Jiu-Jitsu: alunos, aulas, graduações, mensalidades e avisos. São três partes sobre o mesmo banco e o mesmo login: Gestão (administrador e professor), Portal do aluno (aluno e responsável) e Site e acesso (visitante, login, primeiro acesso e recuperação de senha). Este repositório tem só a interface; regras de negócio, cálculos, permissões, auditoria, e-mail e pagamento são do servidor, que fica fora daqui.
+Front-end do Sistema de Gestão para Academia de Jiu-Jitsu: alunos, aulas, graduações, mensalidades e avisos. São três partes sobre o mesmo banco e o mesmo login: Gestão (administrador e professor), Portal do aluno (aluno e responsável) e Acesso (login, primeiro acesso e recuperação de senha). O site público de cada academia saiu do escopo (#14); a parte pública é a landing page da plataforma (#96). Este repositório tem só a interface; regras de negócio, cálculos, permissões, auditoria, e-mail e pagamento são do servidor, que fica fora daqui.
 
 ## 2. Quem usa
 
@@ -14,19 +14,19 @@ Front-end do Sistema de Gestão para Academia de Jiu-Jitsu: alunos, aulas, gradu
 | Professor | Gestão só das turmas em que dá aula: alunos, aulas, graduações e avisos | Acessar o financeiro e as áreas do administrador |
 | Aluno | Portal: horários, avisos, graduação, mensalidades e pagamento online | Marcar presença, reservar aula, ver progresso de graduação |
 | Responsável | Portal, por um ou mais alunos menores ligados à conta | Ver alunos não ligados à conta |
-| Visitante | Site público e pedido de aula experimental | Criar conta (toda conta nasce de convite) |
+| Visitante | Landing page da plataforma, que leva ao login | Criar conta (toda conta nasce de convite) |
 
 ## 3. Escopo
 
 - Entra: as 39 fases dos guias, na parte de interface, e a preparação do front-end (Sprint 00).
-- Fica fora: o back-end (projeto separado, que fala com o front por HTTP), regras de negócio e cálculos, e-mails enviados pelo sistema, recebimento das confirmações do provedor de pagamento, serviço e domínio de e-mail, versão da gestão para celular.
+- Fica fora: o site público de cada academia (decisão #14, 07/10/2026: o endereço é único, o login é único e a academia vem do login), o back-end (projeto separado, que fala com o front por HTTP), regras de negócio e cálculos, e-mails enviados pelo sistema, recebimento das confirmações do provedor de pagamento, serviço e domínio de e-mail, versão da gestão para celular.
 
 ## 4. Requisitos gerais
 
 - Acesso e segurança: login único; a permissão é conferida no servidor, esconder botão não basta; sem sessão válida, telas da gestão e do portal levam ao login. Prazos de sessão, convite e senha estão em aberto (P5).
 - Dados pessoais: alunos, responsáveis e pedidos de aula experimental; política de LGPD e guarda em aberto (P14).
-- Desempenho e volume: metas sugeridas de 2 s (gestão e portal) e 2,5 s (site no celular), por confirmar (P1).
-- Dispositivos: Gestão só em computador, a partir de 1280 px. Portal e site em computador (1440 px) e celular (390 px).
+- Desempenho e volume: metas sugeridas de 2 s (gestão e portal) e 2,5 s (landing page no celular), por confirmar (P1).
+- Dispositivos: Gestão só em computador, a partir de 1280 px. Portal e landing page em computador (1440 px) e celular (390 px).
 - Idioma e formato: interface em português do Brasil, linguagem simples; formatos brasileiros (moeda, data, telefone). Acessibilidade: uso só com teclado, contraste AA, campos com rótulo.
 - Regras do sistema inteiro (README e visão geral): não existe frequência nem presença; graduação é decisão do mestre; mensalidade é o plano menos os benefícios e ninguém digita o valor; não existe cadastro aberto; aluno nunca é excluído (Ativo, Pausado, Inativo).
 
@@ -36,7 +36,7 @@ Alvo que os itens vão seguir (projeto do zero, nada construído ainda).
 
 - Stack: TypeScript (modo estrito), React, Vite, shadcn/ui com Tailwind CSS e Radix, MSW para simular a API. Gerenciador de pacotes, Node e lint conforme o item #2 (propostas: pnpm, Node LTS, ESLint com Prettier e jsx-a11y).
 - Camadas e pastas: por área (`site`, `acesso`, `gestao`, `portal`) mais o compartilhado (componentes, API, formatos), como pede o item #2.
-- Padrões: um app Vite só, com o código de cada área carregado em separado; o site não carrega nada da gestão nem do portal (RNF-S09). Cliente da API isolado; os handlers do MSW de cada fase são o mapa da API que o front espera.
+- Padrões: um app Vite só, com o código de cada área carregado em separado; a landing page não carrega nada da gestão nem do portal (RNF-S09). Cliente da API isolado; os handlers do MSW de cada fase são o mapa da API que o front espera.
 - Back-end e contrato da API (decisão #15, 07/10/2026): o back-end é um projeto separado, que fala com o front por HTTP. O front é feito contra mocks MSW, que definem os payloads antes de a API existir; o back-end parte deles. Rotas e payloads são descritos em OpenAPI, mantido neste repositório enquanto só existe o front e levado ao projeto do back-end quando ele começar; dele saem os tipos do TypeScript, hoje escritos à mão em `src/shared/api/types.ts`. A ordem das rotas acompanha as sprints do front. O back-end é desenvolvido por nós, em outro projeto. Criar o OpenAPI e gerar os tipos é o item #95. A parte de pagamento fica isolada para trocar de provedor.
 - Como roda: desenvolvimento local contra mocks MSW (chave em variável de ambiente); publicação (deploy e prévia por PR) adiada, travada por P23; o item #8 cobre só testes e esteira de qualidade (`pnpm test`, `pnpm test:e2e`, `.github/workflows/ci.yml`).
 
