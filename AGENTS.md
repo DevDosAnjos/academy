@@ -20,7 +20,7 @@ Lido em toda sessão de todo agente. Manter curto: fatos e comandos.
 | Testes | a definir no item #8 | não |
 | Lint ou formatação | `pnpm lint` / `pnpm format:check` (`pnpm format` corrige) | sim |
 
-Linha de base: build, lint, typecheck e format:check passam; não há testes (item #8).
+Linha de base: build, lint, typecheck e format:check passam; não há testes (item #8). Tokens do canvas em `src/index.css`; cor de destaque por `applyAccentColor` (`src/shared/lib/theme.ts`); `cn` vem de `clsx` e `tailwind-merge`.
 Saída longa: gravar o log em pasta temporária fora do repositório e ler só o resumo e as falhas.
 
 ## Regras do projeto
@@ -59,4 +59,4 @@ Saída longa: gravar o log em pasta temporária fora do repositório e ler só o
 
 ## Limitações aceitas
 
-- Nenhuma registrada ainda.
+- Item #3 (base visual: tokens e tema): CA2 (fontes), CA4 (mudança da cor de destaque no navegador), CA6 (teclado) e CA11 (comparação visual com o artboard) foram conferidos só pela construção, no Edge headless, e não pela verificação independente, por falta de navegador na verificação. Aceito pelo dono.
