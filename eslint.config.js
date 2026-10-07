@@ -7,7 +7,15 @@ import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
-  { ignores: ['dist', 'public', 'src/shared/components/ui'] },
+  {
+    ignores: [
+      'dist',
+      'public',
+      'playwright-report',
+      'test-results',
+      'src/shared/components/ui',
+    ],
+  },
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
@@ -19,5 +27,9 @@ export default tseslint.config(
       prettier,
     ],
     languageOptions: { globals: globals.browser },
+  },
+  {
+    files: ['e2e/**/*.ts', 'playwright.config.ts'],
+    languageOptions: { globals: globals.node },
   },
 )
