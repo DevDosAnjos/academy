@@ -91,6 +91,12 @@ if (import.meta.env.DEV) {
     handle: { title: 'API (exemplo)' },
     ...page(() => import('@/shared/api/example-list')),
   })
+  // Example form, development only (item #7).
+  routes[0].children!.push({
+    path: '/dev/api-exemplo-formulario',
+    handle: { title: 'Formulário (exemplo)' },
+    ...page(() => import('@/shared/components/example-form')),
+  })
 }
 
 export const router = createBrowserRouter(routes)
