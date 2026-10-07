@@ -16,6 +16,7 @@ Sprint liberada: Sprint 00. Só o dono libera a seguinte.
 | 9 | [Preparação] Dados fictícios e contas de teste | issue #9 | Sprint 00 | — | agente | feito |
 | 10 | [Preparação] Levar as decisões em aberto à academia | issue #10 | Sprint 00 | — | pessoa (academia) | a fazer |
 | 11 | [Design] Telas que faltam para a Sprint 01: base da gestão e login | issue #11 | Sprint 00 | — | pessoa (design) | a fazer |
+| 95 | [Preparação] Contrato da API em OpenAPI e tipos gerados | issue #95 | Sprint 00 | 5, 6 | agente | a fazer |
 | 16 | [Gestão · F01] Base do sistema: acesso, menu e padrões de tela | issue #16 | Sprint 01 | 2, 3, 4, 5 | agente | a fazer |
 | 17 | [Site e acesso · F01] Acesso › Login e sessão | issue #17 | Sprint 01 | 4, 5, 16 | agente | a fazer |
 | 18 | [Design] Telas que faltam para a Sprint 02: academia e site no ar | issue #18 | Sprint 01 | — | pessoa (design) | a fazer |
@@ -83,7 +84,6 @@ Notas: as issues #83 a #85 (revisão) não declaram dependência, mas só fazem 
 | P1 | Confirmar todas as propostas [sugestão] como estão nos guias (issue #12) | Adotar a proposta da issue | nenhum | Vale o que está escrito no guia. |
 | P2 | Como entregar o site público no Vite: pré-renderizar (proposta), app único com meta fixa no HTML ou projeto separado? (issue #13) | Adotar a proposta da issue | nenhum | App único com título, descrição e imagem fixos no HTML inicial e código de cada área carregado em separado. |
 | P3 | Qual o endereço do site e dos endereços de login, gestão e portal? (issue #14) | Adotar a proposta da issue | nenhum | Um endereço só, com o site na página inicial. |
-| P4 | Onde fica o back-end, quem o desenvolve e como o contrato da API é combinado? (issue #15) | Adotar a proposta da issue | nenhum | Front contra mocks MSW; os handlers viram o mapa da API. |
 | P5 | Prazos de convite, sessão e link de senha; exigências da senha; tentativas e bloqueio; suporte nas telas de erro (issue #19) | Adotar a proposta da issue | nenhum | Valores provisórios; senha 8+ com letra e número; 5 tentativas e 15 min. |
 | P6 | Textos, números, modalidades do site e como fica o site desligado (issue #23) | Adotar a proposta da issue | nenhum | Conteúdo fixo em um só lugar, só Infantil/Juvenil/Adulto; sem números de exemplo; site desligado mostra nome, contato e Entrar. |
 | P7 | Perfis de acesso editáveis? (issue #28) | Adotar a proposta da issue | nenhum | Dois perfis fixos: Administrador e Professor. |

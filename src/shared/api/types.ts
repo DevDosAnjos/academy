@@ -1,4 +1,5 @@
-// Provisional contract with the back-end (item #5, D3/D6). Adjust here only.
+// Contract defined by the front (item #5, decision #15). Types will be generated
+// from the OpenAPI file, which does not exist yet; until then adjust here only.
 
 /** Error body: `{ code, message, fields? }`. */
 export type ApiErrorBody = {

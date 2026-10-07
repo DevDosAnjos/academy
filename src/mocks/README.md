@@ -20,7 +20,7 @@ Acrescente `?mock=` na URL da requisição: `demora` (2 s), `erro` (500), `vazio
 
 ## Dados fictícios e contas de teste
 
-Os dados ficam em `src/mocks/fixtures/` (`types`, `contas`, `academia`, `alunos`, `index`) e entram no `db.data`, que `db.reset()` restaura (use `db.reset()` em `beforeEach` nos testes). Valores em centavos, datas ISO 8601 fixas, mês de referência `REFERENCE_MONTH` (2026-09); status vêm prontos. Os formatos são provisórios (P4) e e-mails são `@exemplo.test`.
+Os dados ficam em `src/mocks/fixtures/` (`types`, `contas`, `academia`, `alunos`, `index`) e entram no `db.data`, que `db.reset()` restaura (use `db.reset()` em `beforeEach` nos testes). Valores em centavos, datas ISO 8601 fixas, mês de referência `REFERENCE_MONTH` (2026-09); status vêm prontos. Os formatos são o primeiro rascunho do contrato, que será descrito em OpenAPI (#15), e e-mails são `@exemplo.test`.
 
 | Conta (`accountId`) | Perfil | Situação |
 |---|---|---|

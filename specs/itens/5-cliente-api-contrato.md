@@ -156,3 +156,11 @@ Cliente único da API (`src/shared/api/client.ts`: cookie de sessão, `X-XSRF-TO
 Verificação: rodada 3 `OK` (build, lint, typecheck e format:check em 0; não há testes na linha de base). Decisão: `env.ts` é o único ponto que lê `import.meta.env` do cliente.
 
 Limitações: CA6 (401 levando a `/entrar?voltar=/gestao` de ponta a ponta) e o clique em "Tentar de novo" não foram vistos no navegador (aceito pelo dono, em `AGENTS.md`). O tempo limite não cobre a leitura do corpo.
+
+## Atualização — decisão da #15 (07/10/2026)
+
+Nota acrescentada depois da entrega; o texto acima não foi alterado.
+
+- O contrato deixa de ser "provisório com o back-end": o back-end é um projeto separado e parte dos payloads que o front define (tipos e handlers do MSW). O contrato será descrito em OpenAPI, mantido neste repositório até o back-end começar. D3 e D6 passam a ter como destino os tipos gerados desse arquivo, que ainda não existe; o item é o #95.
+- "Combinar o padrão com o back-end" e "obter o documento de contexto do projeto" (seção 1, fora do escopo, e última decisão) deixaram de ser pendências: o padrão é o de `types.ts`, e o documento não é pré-requisito.
+- A conferir quando se souber onde a API vai ficar: D2 e a suposição final (cookie `XSRF-TOKEN` lido com `document.cookie`, na mesma origem ou no mesmo site do app), porque o back-end é um projeto separado.

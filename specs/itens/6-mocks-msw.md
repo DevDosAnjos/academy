@@ -135,3 +135,11 @@ Decisões e limitações:
 - `public/mockServiceWorker.js` vai para o `dist`, mas só registra com `VITE_USE_MOCKS=true`.
 - Id do item novo em `/exemplo` é `length + 1`; revisar se surgir remoção.
 - O formato de `/sessao` e `/exemplo` é provisório; ajustam-se só os handlers.
+
+## Atualização — decisão da #15 (07/10/2026)
+
+Nota acrescentada depois da entrega; o texto acima não foi alterado.
+
+- A ordem se inverte: os handlers definem os payloads e o back-end parte deles (a issue previa o handler "conferido contra a API real"). Quando o OpenAPI existir, os handlers passam a ser conferidos contra ele e continuam servindo ao desenvolvimento e aos testes.
+- O formato de `/sessao` e `/exemplo`, tratado como provisório (P4), passa a ser o primeiro rascunho do contrato.
+- Não mudam: o MSW só liga com `VITE_USE_MOCKS=true`, os mesmos handlers servem ao navegador e a Node, e os mocks não têm regra de negócio.
