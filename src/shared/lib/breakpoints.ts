@@ -1,0 +1,5 @@
+export const GESTAO_MIN_WIDTH = 1280
+export const PORTAL_DESKTOP_WIDTH = 1440
+export const PORTAL_MOBILE_WIDTH = 390
+export const SITE_DESKTOP_WIDTH = 1440
+export const SITE_MOBILE_WIDTH = 390
