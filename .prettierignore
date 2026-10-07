@@ -5,3 +5,6 @@ docs
 specs
 src/shared/components/ui
 *.md
+playwright-report
+test-results
+coverage

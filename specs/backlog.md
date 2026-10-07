@@ -12,7 +12,7 @@ Sprint liberada: Sprint 00. Só o dono libera a seguinte.
 | 5 | [Preparação] Cliente da API e contrato com o back-end | issue #5 | Sprint 00 | — | agente | feito |
 | 6 | [Preparação] Mocks da API com MSW (Mock Service Worker) | issue #6 | Sprint 00 | — | agente | feito |
 | 7 | [Preparação] Formulários, validação e formatos brasileiros | issue #7 | Sprint 00 | — | agente | feito |
-| 8 | [Preparação] Testes, qualidade e publicação automática | issue #8 | Sprint 00 | — | agente | a fazer |
+| 8 | [Preparação] Testes e esteira de qualidade (publicação adiada, ver "Trabalho adiado") | issue #8 | Sprint 00 | — | agente | feito |
 | 9 | [Preparação] Dados fictícios e contas de teste | issue #9 | Sprint 00 | — | agente | a fazer |
 | 10 | [Preparação] Levar as decisões em aberto à academia | issue #10 | Sprint 00 | — | pessoa (academia) | a fazer |
 | 11 | [Design] Telas que faltam para a Sprint 01: base da gestão e login | issue #11 | Sprint 00 | — | pessoa (design) | a fazer |
@@ -76,7 +76,7 @@ Notas: as issues #83 a #85 (revisão) não declaram dependência, mas só fazem 
 
 ## Pendências para o dono
 
-Último número usado: P22. Quem acrescenta uma pendência atualiza esta linha; os números não se repetem, mesmo depois que a pendência sai da tabela.
+Último número usado: P23. Quem acrescenta uma pendência atualiza esta linha; os números não se repetem, mesmo depois que a pendência sai da tabela.
 
 | Nº | Pendência | Opção recomendada | Trava qual item | Enquanto isso |
 |---|---|---|---|---|
@@ -102,5 +102,12 @@ Notas: as issues #83 a #85 (revisão) não declaram dependência, mas só fazem 
 | P20 | Portal: quando o aviso passa a lido e como a aula cancelada aparece (issue #68) | Adotar a proposta da issue | nenhum | Lido ao clicar ou em Marcar todos; aula cancelada fica na grade com rótulo. |
 | P21 | Qual provedor de pagamento online e quem arca com as taxas? (issue #82) | Adotar a proposta da issue | 80 | Pagamento lançado à mão na gestão; portal só mostra cobranças; parte de pagamento isolada no front. |
 | P22 | As issues de design (#11, #18, #22, #27, #34, #40, #45, #49, #57, #62, #73, #79) devem barrar a fase que usa as telas? | Não barrar: seguir o padrão das telas existentes e dos guias; as telas entram quando desenhadas | nenhum | Agente segue o padrão do canvas e marca o que ficou sem tela |
+| P23 | Onde o front será hospedado e quem cria a conta e os segredos de publicação? (issue #8; o dono ainda não sabe, publicação adiada) | Cloudflare Pages (plano gratuito): projeto de teste e de produção separados e prévia por pull request; o dono cria o projeto e guarda o token e o ID da conta como segredos do repositório | nenhum (só a publicação adiada) | Nada é publicado; o dono retoma a pendência quando o projeto estiver mais completo. |
+
+## Trabalho adiado
+
+| Trabalho | Origem | Travado por | Observação |
+|---|---|---|---|
+| Publicação automática: deploy com ambiente de teste separado do de produção e prévia por pull request | issue #8 | P23 | Fora do item #8 por decisão do dono. Respondida a P23, vira item novo no backlog (não reabre o #8). |
 
 A pendência respondida sai da tabela e a resposta vira decisão em `specs/projeto.md` ou no arquivo do item.

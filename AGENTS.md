@@ -20,10 +20,10 @@ Lido em toda sessão de todo agente. Manter curto: fatos e comandos.
 | Instalar / build | `pnpm install` / `pnpm build` | sim |
 | Rodar | `pnpm dev` (http://localhost:5173) | sim |
 | Tipos | `pnpm typecheck` | sim |
-| Testes | a definir no item #8 | não |
+| Testes | `pnpm test` (unidade e componente) / `pnpm test:e2e` (Playwright; antes, `pnpm exec playwright install`) | sim (WebKit só no Actions) |
 | Lint ou formatação | `pnpm lint` / `pnpm format:check` (`pnpm format` corrige) | sim |
 
-Linha de base: build, lint, typecheck e format:check passam; não há testes (item #8). Tokens do canvas em `src/index.css`; cor de destaque por `applyAccentColor` (`src/shared/lib/theme.ts`); `cn` vem de `clsx` e `tailwind-merge`.
+Linha de base: build, lint, typecheck, format:check e `pnpm test` (19 testes) passam; `pnpm test:e2e` passa em chromium, firefox, mobile-chrome e edge (webkit e mobile-safari não rodam nesta máquina Windows e valem no Actions). Testes de unidade ao lado do código (`*.test.ts(x)`), e2e em `e2e/`, passo a passo em `src/test/README.md`. CI em `.github/workflows/ci.yml` (todo PR). Publicação e prévia por PR: adiadas (P23). Tokens do canvas em `src/index.css`; cor de destaque por `applyAccentColor` (`src/shared/lib/theme.ts`); `cn` vem de `clsx` e `tailwind-merge`.
 Saída longa: gravar o log em pasta temporária fora do repositório e ler só o resumo e as falhas.
 
 ## Regras do projeto
@@ -66,3 +66,5 @@ Saída longa: gravar o log em pasta temporária fora do repositório e ler só o
 - Item #5 (cliente da API e contrato): CA6 (401 levando a `/entrar?voltar=/gestao` de ponta a ponta) e o clique em "Tentar de novo" de `/dev/api-exemplo` ficaram sem conferência no navegador. O redirecionamento é o `RequireAccess` do item #4, não alterado. Aceito pelo dono.
 - Item #6 (mocks da API com MSW): CA1, CA2 e CA10 (lista renderizada com e sem `VITE_USE_MOCKS=true` e estados vazio e erro em `/dev/api-exemplo`) foram conferidos só pela construção, no Edge headless, e não pela verificação independente, por falta de navegador na verificação. Aceito pelo dono.
 - Item #7 (formulários e validação): CA1 a CA5, CA7, CA10, CA12 e CA13 (formulário de exemplo em `/dev/api-exemplo-formulario`) foram conferidos só pela construção, no Edge headless e antes da correção do `mode: onTouched`, e não pela verificação independente, por falta de navegador na verificação. Aceito pelo dono.
+- Item #8 (testes e esteira de qualidade): CA11 (projetos webkit e mobile-safari do Playwright), CA12 e CA13 (workflow do GitHub Actions) não foram conferidos localmente nem pela verificação. Serão conferidos pelo Actions depois que o PR abrir, e a entrega aguarda as verificações do PR antes do merge. Aceito pelo dono.
+- Issue #8: a publicação ficou adiada (P23), e o dono não objetou ao fechamento. A issue fecha no merge do item, como manda "Issues", com comentário de que a publicação ficou adiada (P23).
