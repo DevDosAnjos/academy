@@ -2,6 +2,8 @@
 
 > Guia: Site e acesso · Etapa A · Acesso · código `LGN` · [índice do guia](README.md)
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 - **Objetivo:** Dar uma única porta de entrada para todas as contas e levar cada uma para a sua área: a gestão ou o portal.
 - **Depende de:** Gestão, Fase 1 (autenticação, sessão e registro de auditoria). Esta fase é a tela dessa autenticação e é feita junto com ela.
 - **Quem usa:** Administrador, Professor, Aluno e Responsável.
@@ -38,7 +40,7 @@
 | **RF-LGN-04** | Quando a sessão não pode ser aberta, o sistema mostra sempre a mesma mensagem, sem dizer se o erro está no e-mail ou na senha, e mantém a pessoa no login. |
 | **RF-LGN-05** | “Esqueci minha senha” abre a recuperação de senha (Fase 3). |
 | **RF-LGN-06** | A tela informa que, no primeiro acesso, a academia envia um convite por e-mail. No computador há o link “Criar minha senha”. No celular há só a orientação de usar o convite. |
-| **RF-LGN-07** | “Voltar ao site da academia” abre o site público. No celular o link se chama “Conhecer a academia”. |
+| **RF-LGN-07** | ~~“Voltar ao site da academia” abre o site público. No celular o link se chama “Conhecer a academia”.~~ _Atualização:_ O link de volta abre a landing page da plataforma (#96). O texto do link, no computador e no celular, fica a definir no desenho. |
 | **RF-LGN-08** | Sem sessão válida, qualquer tela da gestão ou do portal leva ao login. Depois de entrar, a pessoa volta para a tela que tinha pedido. _[sugestão]_ |
 | **RF-LGN-09** | Quem já tem sessão válida e abre o login vai direto para a sua área. _[sugestão]_ |
 | **RF-LGN-10** | A entrada atualiza a data do último acesso, mostrada em Configurações › Usuários e permissões. |
@@ -66,7 +68,7 @@
 
 **Fluxo principal**
 
-1. Abre o site da academia e clica em “Entrar”.
+1. ~~Abre o site da academia e clica em “Entrar”.~~ _Atualização:_ Abre a landing page da plataforma e clica em “Entrar”.
 2. Informa o e-mail e a senha.
 3. Clica em “Entrar”.
 4. O sistema valida, abre a sessão e leva a conta para a gestão ou para o portal.

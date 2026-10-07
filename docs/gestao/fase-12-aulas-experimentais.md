@@ -2,8 +2,10 @@
 
 > Guia: Gestão · Etapa C · Operação e comunicação · código `EXP` · [índice do guia](README.md)
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 - **Objetivo:** Acompanhar quem quer conhecer a academia, do pedido ao dia da aula.
-- **Depende de:** Fases 6 e 11. O pedido pelo site depende do arquivo “Site e acesso”.
+- ~~**Depende de:** Fases 6 e 11. O pedido pelo site depende do arquivo “Site e acesso”.~~ _Atualização:_ **Depende de:** Fases 6 e 11. O pedido pelo site saiu do escopo: as aulas experimentais são lançadas na gestão.
 - **Quem usa:** Administrador. O professor vê as experimentais das suas aulas.
 
 ## Telas no canvas
@@ -14,7 +16,7 @@
 
 ## Dados
 
-- Aula experimental: nome, telefone, turma, aula (data e horário), status, origem (site ou gestão), mensagem da pessoa e observações.
+- ~~Aula experimental: nome, telefone, turma, aula (data e horário), status, origem (site ou gestão), mensagem da pessoa e observações.~~ _Atualização:_ Aula experimental: nome, telefone, turma, aula (data e horário), status, mensagem da pessoa e observações.
 
 ## Passo a passo
 
@@ -22,7 +24,7 @@
 2. Montar a lista com as abas Hoje, Próximas, Realizadas e Canceladas e os filtros por nome, tipo e período.
 3. Montar o painel com contato e ações.
 4. Montar a janela de agendamento, que mostra as próximas aulas da turma escolhida.
-5. Montar o aviso de “pedido novo pelo site” no topo da lista. Ele recebe dados quando o site existir.
+5. ~~Montar o aviso de “pedido novo pelo site” no topo da lista. Ele recebe dados quando o site existir.~~ _Removido do escopo (#14)._
 6. Implementar reagendar e cancelar.
 7. Mostrar a experimental na aula da agenda e no Início.
 
@@ -33,7 +35,7 @@
 | **RF-EXP-01** | Listar as aulas experimentais com pessoa, telefone, data, horário, turma e status. |
 | **RF-EXP-02** | Abas com contagem: Hoje, Próximas, Realizadas e Canceladas. |
 | **RF-EXP-03** | Filtrar por nome, tipo e período. |
-| **RF-EXP-04** | Destacar os pedidos novos que chegaram pelo site, com o que a pessoa escreveu. |
+| **RF-EXP-04** | ~~Destacar os pedidos novos que chegaram pelo site, com o que a pessoa escreveu.~~ _Removido do escopo (#14)._ |
 | **RF-EXP-05** | Agendar: nome, telefone, turma e uma das próximas aulas da turma, com observações. |
 | **RF-EXP-06** | Ao agendar, oferecer o envio da confirmação pelo WhatsApp. |
 | **RF-EXP-07** | O painel mostra quando, turma, professor e telefone, com as ações WhatsApp, Reagendar e Cancelar. |
@@ -43,7 +45,7 @@
 
 | Código | Regra |
 | --- | --- |
-| **RN-EXP-01** | O pedido chega pelo site ou é lançado na gestão. |
+| **RN-EXP-01** | ~~O pedido chega pelo site ou é lançado na gestão.~~ _Atualização:_ O pedido é lançado na gestão. |
 | **RN-EXP-02** | A experimental é marcada em uma aula que existe na agenda. |
 | **RN-EXP-03** | Os status são Agendada, Confirmada, Realizada e Cancelada. Passa a Realizada quando a aula termina sem ter sido cancelada. _[sugestão]_ |
 | **RN-EXP-04** | Quem faz aula experimental não é aluno: não tem cobrança, plano nem acesso ao portal. |
@@ -53,7 +55,7 @@
 
 ## Casos de uso
 
-### UC-EXP-01 · Agendar a partir de um pedido do site
+### ~~UC-EXP-01 · Agendar a partir de um pedido do site~~ _Removido do escopo (#14)._
 
 **Quem:** Administrador. **Antes:** Pedido recebido pelo site.
 

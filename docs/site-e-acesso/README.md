@@ -2,6 +2,8 @@
 
 > Sistema de Gestão para Academia de Jiu-Jitsu · Versão 1.0 · 2 de outubro de 2026 · Arquivo 3 de 3 · os dois primeiros tratam da Gestão e do Portal do aluno
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 Ordem de desenvolvimento, requisitos funcionais e não funcionais, regras de negócio e casos de uso do site público e das telas de entrada no sistema.
 
 | **6** | **61** | **59** | **11** | **28** |
@@ -61,11 +63,11 @@ O acesso é um só para todo o sistema. A pessoa informa e-mail e senha, e o sis
 
 | Quem | O que faz |
 | --- | --- |
-| Visitante | Abre o site sem login, conhece a academia, tira dúvidas e pede uma aula experimental. |
+| Visitante | ~~Abre o site sem login, conhece a academia, tira dúvidas e pede uma aula experimental.~~ _Atualização:_ Abre a landing page da plataforma sem login e vai para o login. |
 | Convidado | Recebeu o convite por e-mail e cria a própria senha. |
 | Administrador e Professor | Entram pelo login e são levados à gestão. |
 | Aluno e Responsável | Entram pelo mesmo login e são levados ao portal. |
-| Administrador | Decide, pela gestão, se o site está no ar e se mostra os horários e a equipe. |
+| Administrador | ~~Decide, pela gestão, se o site está no ar e se mostra os horários e a equipe.~~ _Removido do escopo (#14)._ |
 
 ### Mapa das partes
 
@@ -74,9 +76,9 @@ O acesso é um só para todo o sistema. A pessoa informa e-mail e senha, e o sis
 | Acesso › Login | Entrar com e-mail e senha e ser levado à gestão ou ao portal | 1 |
 | Acesso › Primeiro acesso | Criar a senha a partir do convite enviado pela gestão | 2 |
 | Acesso › Recuperar senha | Pedir um link por e-mail e criar uma nova senha | 3 |
-| Site público › Página da academia | Apresentação, modalidades, dúvidas e contato | 4 |
-| Site público › Horários e equipe | Grade de horários e professores, lidos da gestão | 5 |
-| Site público › Pedido de aula experimental | Formulário que entrega o pedido à gestão | 6 |
+| ~~Site público › Página da academia~~ | ~~Apresentação, modalidades, dúvidas e contato~~ | ~~4~~ _Removido do escopo (#14)._ |
+| ~~Site público › Horários e equipe~~ | ~~Grade de horários e professores, lidos da gestão~~ | ~~5~~ _Removido do escopo (#14)._ |
+| ~~Site público › Pedido de aula experimental~~ | ~~Formulário que entrega o pedido à gestão~~ | ~~6~~ _Removido do escopo (#14)._ |
 
 ### O que não faz parte
 
@@ -95,19 +97,19 @@ Estes pontos ainda não foram decididos. Nenhum deles impede começar, porque to
 
 | O que falta decidir | O que afeta | Enquanto não decide |
 | --- | --- | --- |
-| Textos que faltam: endereço, idade mínima, kimono, condições da aula experimental, segurança e o que levar | Página da academia e Pedido de aula experimental | O site não vai ao ar com esses espaços em branco. |
+| ~~Textos que faltam: endereço, idade mínima, kimono, condições da aula experimental, segurança e o que levar~~ | ~~Página da academia e Pedido de aula experimental~~ | ~~O site não vai ao ar com esses espaços em branco.~~ _Removido do escopo (#14)._ |
 | De onde vêm os números do topo (alunos, aulas realizadas, percentual e professores) | Página da academia | Só publicar o que a academia confirmar. Nada é calculado pelo sistema. |
-| Modalidades Kids e No-Gi, que não existem como tipo de turma na gestão | Página da academia, Horários e Pedido de aula experimental | Mostrar só Infantil, Juvenil e Adulto. |
-| Onde o conteúdo do site é editado: textos, números, modalidades e dúvidas | Página da academia | Conteúdo fixo, guardado em um só lugar e trocado por quem desenvolve. |
-| O que o visitante vê com o site desligado | Página da academia | Página simples com o nome da academia, o contato e o link “Entrar”. |
+| ~~Modalidades Kids e No-Gi, que não existem como tipo de turma na gestão~~ | ~~Página da academia, Horários e Pedido de aula experimental~~ | ~~Mostrar só Infantil, Juvenil e Adulto.~~ _Removido do escopo (#14)._ |
+| ~~Onde o conteúdo do site é editado: textos, números, modalidades e dúvidas~~ | ~~Página da academia~~ | ~~Conteúdo fixo, guardado em um só lugar e trocado por quem desenvolve.~~ _Removido do escopo (#14)._ |
+| ~~O que o visitante vê com o site desligado~~ | ~~Página da academia~~ | ~~Página simples com o nome da academia, o contato e o link “Entrar”.~~ _Removido do escopo (#14)._ |
 | Como cada professor é apresentado, a ordem e o destaque | Horários e equipe | Função do cadastro e ordem alfabética, sem destaque. |
 | Prazo do convite | Primeiro acesso | Valor provisório, a combinar. O mesmo ponto está no guia da Gestão. |
 | Tempo de sessão e prazo do “Manter conectado” | Login e sessão | Valores provisórios, a combinar. |
 | Exigências da senha e prazo do link de nova senha | Primeiro acesso e Recuperar senha | Senha como no desenho: 8 caracteres, com letra e número. Link com prazo curto. |
 | Professor que também é aluno: uma conta ou duas | Login e sessão | Um e-mail para cada papel. |
-| Política de privacidade e por quanto tempo guardar os pedidos | Pedido de aula experimental | Guardar os pedidos e não apagar nada até a decisão. |
+| ~~Política de privacidade e por quanto tempo guardar os pedidos~~ | ~~Pedido de aula experimental~~ | ~~Guardar os pedidos e não apagar nada até a decisão.~~ _Removido do escopo (#14)._ |
 | Telas não desenhadas: nova senha, convite vencido, Primeiro acesso e formulário de pedido no celular, e os e-mails | Acesso e Pedido de aula experimental | Seguir o padrão das telas existentes. |
-| Endereço do site e das áreas (domínio) | Todo o arquivo | Um endereço só, com o site na página inicial. Resolver na Fase 0. |
+| Endereço do site e das áreas (domínio) | Todo o arquivo | ~~Um endereço só, com o site na página inicial. Resolver na Fase 0.~~ _Atualização:_ Um endereço só para todas as academias, com login único. Decidido na #14. |
 
 ## Requisitos não funcionais
 
@@ -115,7 +117,7 @@ Valem para todas as fases deste guia. Os requisitos não funcionais da Gestão q
 
 | Código | Uso |
 | --- | --- |
-| **RNF-S01** | O site e as telas de acesso funcionam no computador e no celular, no navegador, sem instalar nada. |
+| **RNF-S01** | ~~O site e as telas de acesso~~ _Atualização:_ A landing page e as telas de acesso funcionam no computador e no celular, no navegador, sem instalar nada. |
 | **RNF-S02** | As larguras de referência são 1440 px no computador e 390 px no celular. Entre as duas, a tela se ajusta. |
 | **RNF-S03** | Todo o texto é em português do Brasil, em linguagem simples, pensada para quem nunca treinou e para pais de alunos. |
 | **RNF-S04** | No celular, botões e links têm área de toque de pelo menos 44 px. |
@@ -126,9 +128,9 @@ telefone, e-mail e senha.
 
 | Código | Desempenho |
 | --- | --- |
-| **RNF-S07** | A primeira parte do site aparece em até 2,5 segundos em uma conexão comum de celular. _[sugestão: confirmar a meta]_ |
+| **RNF-S07** | ~~A primeira parte do site~~ _Atualização:_ A primeira parte da landing page aparece em até 2,5 segundos em uma conexão comum de celular. _[sugestão: confirmar a meta]_ |
 | **RNF-S08** | O login responde em até 2 segundos em uso normal. _[sugestão: confirmar a meta]_ |
-| **RNF-S09** | O site não carrega nada da gestão nem do portal. A página do visitante é leve. |
+| **RNF-S09** | ~~O site não carrega~~ _Atualização:_ A landing page não carrega nada da gestão nem do portal. A página do visitante é leve. |
 
 | Código | Segurança e privacidade |
 | --- | --- |
@@ -138,27 +140,27 @@ telefone, e-mail e senha.
 | **RNF-S13** | Login, recuperação de senha e formulário de pedido têm limite de tentativas por conta e por aparelho. _[sugestão]_ |
 | **RNF-S14** | A sessão fica em um cookie protegido, que só trafega por HTTPS e não pode ser lido por scripts da página. Sair encerra a sessão no servidor. |
 | **RNF-S15** | Os formulários são protegidos contra envio forjado por outro site. |
-| **RNF-S16** | A consulta usada pelo site público só devolve os campos que aparecem na página. |
+| **RNF-S16** | ~~A consulta usada pelo site público só devolve os campos que aparecem na página.~~ _Removido do escopo (#14)._ |
 | **RNF-S17** | O tratamento de dados segue a LGPD. O formulário pede o mínimo, diz para que os dados servem e leva à política de privacidade. Os dados de criança são informados por um adulto. Validar com quem cuida do jurídico da academia. **[A DEFINIR: o texto da política]** |
 
 | Código | Confiabilidade |
 | --- | --- |
 | **RNF-S18** | Clicar duas vezes em “Enviar pedido” ou em “Criar senha e entrar” não repete a ação. |
 | **RNF-S19** | Se o envio de um e-mail de convite ou de nova senha falhar, o sistema tenta de novo e registra a falha. |
-| **RNF-S20** | Se a consulta de horários ou de equipe falhar, a seção some e o resto do site continua no ar. |
+| **RNF-S20** | ~~Se a consulta de horários ou de equipe falhar, a seção some e o resto do site continua no ar.~~ _Removido do escopo (#14)._ |
 | **RNF-S21** | As mensagens de erro dizem o que aconteceu e o que a pessoa pode fazer em seguida. |
 
 | Código | Manutenção |
 | --- | --- |
 | **RNF-S22** | O acesso usa a mesma autenticação da gestão e do portal. Nenhuma regra é repetida no navegador. |
-| **RNF-S23** | O conteúdo do site fica separado do layout, para a academia poder trocar os textos sem refazer a página. |
+| **RNF-S23** | ~~O conteúdo do site fica separado do layout, para a academia poder trocar os textos sem refazer a página.~~ _Atualização:_ O conteúdo da landing page fica separado do layout, para ser trocado sem refazer a página. |
 | **RNF-S24** | Cada regra de negócio deste guia tem um teste automatizado. |
 
 | Código | Compatibilidade e divulgação |
 | --- | --- |
 | **RNF-S25** | As telas funcionam nas versões atuais de Chrome, Edge, Firefox e Safari, no computador e no celular. |
 | **RNF-S26** | Os formatos são brasileiros: telefone com DDD, data dd/mm/aaaa e fuso de Brasília. |
-| **RNF-S27** | O site tem título, descrição e imagem para aparecer bem em buscadores e quando o link é compartilhado no WhatsApp. As telas de acesso não aparecem em buscadores. _[sugestão]_ |
+| **RNF-S27** | ~~O site tem título~~ _Atualização:_ A landing page tem título, descrição e imagem para aparecer bem em buscadores e quando o link é compartilhado no WhatsApp. As telas de acesso não aparecem em buscadores. _[sugestão]_ |
 | **RNF-S28** | Os e-mails de convite e de nova senha podem ser lidos sem dificuldade no celular. _[sugestão]_ |
 
 ## Ordem de desenvolvimento
@@ -174,7 +176,7 @@ São 6 fases, em duas etapas. As fases deste guia não são feitas todas de uma 
 | **03** | Recuperar senha | Fase 2 deste guia | Reaproveita a tela de criar a senha. |
 | **04** | Página da academia | Gestão, Fase 2 | Só precisa dos dados da academia. |
 | **05** | Horários e equipe | Gestão, Fase 11 | Precisa de professores, turmas e agenda. |
-| **06** | Pedido de aula experimental | Gestão, Fase 12 | O pedido chega em Aulas experimentais. |
+| ~~**06**~~ | ~~Pedido de aula experimental~~ | ~~Gestão, Fase 12~~ | ~~O pedido chega em Aulas experimentais.~~ _Removido do escopo (#14)._ |
 
 ### Fase 0 · Antes de começar
 
@@ -210,9 +212,9 @@ São 6 fases, em duas etapas. As fases deste guia não são feitas todas de uma 
 
 | Fase | O que é construído | Depende de |
 | --- | --- | --- |
-| **04** | Site público › Página da academia | Gestão, Fase 2 (dados da academia e opção “Site publicado”). Fase 1 deste guia, para o botão “Entrar”. |
-| **05** | Site público › Horários e equipe | Fase 4. Gestão, Fases 4 (professores), 6 (turmas) e 11 (agenda), além das opções “Mostrar horários” e “Mostrar equipe” da Fase 2. |
-| **06** | Site público › Pedido de aula experimental | Fase 4. Gestão, Fase 12 (Aulas experimentais). A notificação é ligada na Gestão, Fase 19, e o registro no histórico usa o serviço da Gestão, Fase 1. |
+| ~~**04**~~ | ~~Site público › Página da academia~~ | ~~Gestão, Fase 2 (dados da academia e opção “Site publicado”). Fase 1 deste guia, para o botão “Entrar”.~~ _Removido do escopo (#14)._ |
+| ~~**05**~~ | ~~Site público › Horários e equipe~~ | ~~Fase 4. Gestão, Fases 4 (professores), 6 (turmas) e 11 (agenda), além das opções “Mostrar horários” e “Mostrar equipe” da Fase 2.~~ _Removido do escopo (#14)._ |
+| ~~**06**~~ | ~~Site público › Pedido de aula experimental~~ | ~~Fase 4. Gestão, Fase 12 (Aulas experimentais). A notificação é ligada na Gestão, Fase 19, e o registro no histórico usa o serviço da Gestão, Fase 1.~~ _Removido do escopo (#14)._ |
 
 ### O que pode mudar de lugar
 
@@ -251,9 +253,9 @@ As telas por onde todos entram. Elas são feitas no começo do projeto, junto co
 
 O que o visitante vê sem login. A página da academia pode ir ao ar cedo. Os horários, a equipe e o pedido de aula dependem de fases da Gestão.
 
-- [Fase 04 · Site público › Página da academia](fase-04-pagina-da-academia.md) · `SIT`
-- [Fase 05 · Site público › Horários e equipe](fase-05-horarios-e-equipe.md) · `HEQ`
-- [Fase 06 · Site público › Pedido de aula experimental](fase-06-pedido-de-aula-experimental.md) · `EXS`
+- ~~[Fase 04 · Site público › Página da academia](fase-04-pagina-da-academia.md) · `SIT`~~ _Removido do escopo (#14)._
+- ~~[Fase 05 · Site público › Horários e equipe](fase-05-horarios-e-equipe.md) · `HEQ`~~ _Removido do escopo (#14)._
+- ~~[Fase 06 · Site público › Pedido de aula experimental](fase-06-pedido-de-aula-experimental.md) · `EXS`~~ _Removido do escopo (#14)._
 
 ## Revisão final
 
@@ -281,10 +283,10 @@ Depois da Fase 6, antes de divulgar o endereço do site:
 | Link de uso único | Link que funciona uma vez só e tem prazo. É usado no convite e na nova senha. |
 | Manter conectado | Opção do login que faz a sessão durar mais tempo naquele aparelho. |
 | Mensagem única de erro | A mesma resposta para qualquer falha de entrada, para não revelar se um e-mail está cadastrado. |
-| Página da academia (landing page) | A página única do site, com todas as seções, uma abaixo da outra. |
-| Pedido de aula experimental | O que o visitante envia pelo formulário. A aula só é marcada depois, pela academia. |
+| ~~Página da academia (landing page)~~ | ~~A página única do site, com todas as seções, uma abaixo da outra.~~ _Removido do escopo (#14)._ |
+| ~~Pedido de aula experimental~~ | ~~O que o visitante envia pelo formulário. A aula só é marcada depois, pela academia.~~ _Removido do escopo (#14)._ |
 | Sessão | O período em que a pessoa fica dentro do sistema depois de entrar. |
-| Site publicado | Opção de Configurações › Academia que coloca o site no ar ou tira do ar. |
+| ~~Site publicado~~ | ~~Opção de Configurações › Academia que coloca o site no ar ou tira do ar.~~ _Removido do escopo (#14)._ |
 | Visitante | Quem abre o site sem ter conta nem login. |
 
 Este é o último dos três arquivos. Com ele, a Gestão, o Portal do aluno e o Site e acesso ficam descritos do começo ao fim.

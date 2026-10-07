@@ -2,6 +2,8 @@
 
 > Guia: Site e acesso · Etapa B · Site público · código `EXS` · [índice do guia](README.md)
 
+> **Fora do escopo desde 07/10/2026 (issue #14).** O site público de cada academia saiu do escopo e esta fase não será feita. No lugar dele entra a landing page da plataforma (#96). O texto abaixo fica só como registro.
+
 - **Objetivo:** Receber pelo site o pedido de quem quer fazer uma aula e entregar esse pedido à gestão.
 - **Depende de:** Fase 4. Gestão, Fase 12 (Aulas experimentais). A notificação é ligada na Gestão, Fase 19, e o registro no histórico usa o serviço da Gestão, Fase 1.
 - **Quem usa:** Visitante. O administrador recebe o pedido na gestão.

@@ -2,6 +2,8 @@
 
 > Guia: Site e acesso · Etapa B · Site público · código `HEQ` · [índice do guia](README.md)
 
+> **Fora do escopo desde 07/10/2026 (issue #14).** O site público de cada academia saiu do escopo e esta fase não será feita. No lugar dele entra a landing page da plataforma (#96). O texto abaixo fica só como registro.
+
 - **Objetivo:** Mostrar no site a grade de horários e a equipe a partir do que já está na gestão, sem digitar nada duas vezes.
 - **Depende de:** Fase 4. Gestão, Fases 4 (professores), 6 (turmas) e 11 (agenda), além das opções “Mostrar horários” e “Mostrar equipe” da Fase 2.
 - **Quem usa:** Visitante. O administrador liga e desliga cada seção pela gestão.

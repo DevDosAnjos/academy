@@ -2,6 +2,8 @@
 
 > Guia: Gestão · Etapa E · Acompanhamento · código `HIS` · [índice do guia](README.md)
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 - **Objetivo:** Permitir consultar quem fez o quê e quando.
 - **Depende de:** Fase 1. O registro existe desde o começo. Esta fase entrega a tela.
 - **Quem usa:** Administrador.
@@ -30,7 +32,7 @@
 | **RF-HIS-02** | Filtrar por período, por usuário e por área: Alunos, Financeiro, Agenda, Comunicação e Configurações. |
 | **RF-HIS-03** | O painel mostra data e hora, autor, área, o que mudou com o valor antes e depois, e o atalho para a tela do registro. |
 | **RF-HIS-04** | Em graduações, mostrar a faixa antes e depois. |
-| **RF-HIS-05** | Registrar também ações vindas de fora da gestão: pedido pelo site e pagamento pelo portal. |
+| **RF-HIS-05** | ~~Registrar também ações vindas de fora da gestão: pedido pelo site e pagamento pelo portal.~~ _Atualização:_ Registrar também ações vindas de fora da gestão: pagamento pelo portal. |
 | **RF-HIS-06** | Exportar o histórico. |
 | **RF-HIS-07** | Carregar registros mais antigos sob demanda. |
 
@@ -41,7 +43,7 @@
 | **RN-HIS-01** | O histórico não pode ser editado nem apagado. |
 | **RN-HIS-02** | Toda exportação de dados gera um registro, com o que saiu do sistema. |
 | **RN-HIS-03** | Só o administrador consulta o histórico. |
-| **RN-HIS-04** | Cada registro diz se a ação foi feita por um usuário da gestão, pelo portal ou pelo site. |
+| **RN-HIS-04** | ~~Cada registro diz se a ação foi feita por um usuário da gestão, pelo portal ou pelo site.~~ _Atualização:_ Cada registro diz se a ação foi feita por um usuário da gestão ou pelo portal. |
 
 ## Casos de uso
 

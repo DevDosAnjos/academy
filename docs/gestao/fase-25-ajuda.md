@@ -2,6 +2,8 @@
 
 > Guia: Gestão · Etapa F · Dados e fechamento · código `AJU` · [índice do guia](README.md)
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 - **Objetivo:** Explicar em uma página o que cada parte do sistema faz.
 - **Depende de:** Todas as fases anteriores, porque os textos descrevem telas prontas.
 - **Quem usa:** Todos.
@@ -26,7 +28,7 @@
 | --- | --- |
 | **RF-AJU-01** | Mostrar um bloco por módulo, com um resumo de uma linha. |
 | **RF-AJU-02** | Para cada submódulo, mostrar uma explicação curta e o link para abrir a tela. |
-| **RF-AJU-03** | Explicar no topo que o menu muda conforme o perfil, e incluir os atalhos do menu (busca e notificações) e o que fica fora da gestão (portal e site). |
+| **RF-AJU-03** | Explicar no topo que o menu muda conforme o perfil, e incluir os atalhos do menu (busca e notificações) e o que fica fora da gestão ~~(portal e site)~~ _Atualização:_ (portal). |
 
 ## Regras de negócio
 

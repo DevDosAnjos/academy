@@ -2,8 +2,10 @@
 
 > Guia: Gestão · Etapa E · Acompanhamento · código `NOT` · [índice do guia](README.md)
 
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
+
 - **Objetivo:** Avisar o usuário do que aconteceu e pede atenção, sem ele precisar procurar.
-- **Depende de:** Fases 12 e 14. Parte dos avisos vem do portal e do site.
+- ~~**Depende de:** Fases 12 e 14. Parte dos avisos vem do portal e do site.~~ _Atualização:_ **Depende de:** Fases 12 e 14. Parte dos avisos vem do portal.
 - **Quem usa:** Administrador. O professor recebe só o que é das suas turmas.
 
 ## Telas no canvas
@@ -36,13 +38,13 @@
 
 | Código | Regra |
 | --- | --- |
-| **RN-NOT-01** | Geram notificação: pedido de aula experimental pelo site, pagamento recebido pelo portal, pagamento não aprovado no portal, mensalidades que vencem hoje, convite não aceito e turma sem grupo de WhatsApp. |
+| **RN-NOT-01** | ~~Geram notificação: pedido de aula experimental pelo site, pagamento recebido pelo portal, pagamento não aprovado no portal, mensalidades que vencem hoje, convite não aceito e turma sem grupo de WhatsApp.~~ _Atualização:_ Geram notificação: pagamento recebido pelo portal, pagamento não aprovado no portal, mensalidades que vencem hoje, convite não aceito e turma sem grupo de WhatsApp. |
 | **RN-NOT-02** | O professor só recebe as notificações das suas turmas e nenhuma de assunto financeiro. |
 | **RN-NOT-03** | A notificação informa. Ela não substitui a lista “Precisa de atenção” do Início. |
 
 ## Casos de uso
 
-### UC-NOT-01 · Tratar um pedido de aula experimental pela notificação
+### ~~UC-NOT-01 · Tratar um pedido de aula experimental pela notificação~~ _Removido do escopo (#14)._
 
 **Quem:** Administrador. **Antes:** Pedido recebido pelo site.
 
@@ -59,5 +61,5 @@ Notificação lida e aula experimental agendada.
 
 ## Pronto quando
 
-- Um pedido feito no site gera a notificação.
+- ~~Um pedido feito no site gera a notificação.~~ _Removido do escopo (#14)._
 - O contador diminui ao marcar como lidas.

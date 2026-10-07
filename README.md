@@ -1,5 +1,7 @@
 # Academy
 
+
+> **Atualização de escopo (07/10/2026, issue #14):** o site público de cada academia saiu do escopo; no lugar dele entra a landing page da plataforma (#96). O que estava escrito aparece riscado, com a atualização logo depois quando há.
 Front-end do **Sistema de Gestão para Academia de Jiu-Jitsu**: alunos, aulas, graduações, mensalidades e avisos.
 
 > **Situação:** em preparação. O esqueleto do projeto existe (Vite, React, TypeScript e shadcn/ui); as telas ainda não. A preparação do projeto está na [Sprint 00](https://github.com/DevDosAnjos/Academy/milestone/1).
@@ -12,9 +14,9 @@ São três partes, que usam o mesmo banco de dados e o mesmo login.
 | --- | --- | --- | --- |
 | Gestão | Administrador e Professor | Cadastros, agenda, graduações, financeiro, comunicados, relatórios e configurações. | Só no computador |
 | Portal do aluno | Aluno e Responsável | Horários, avisos, graduação, mensalidades e pagamento online. | Computador e celular |
-| Site e acesso | Visitante e todas as contas | Site da academia, pedido de aula experimental, login, primeiro acesso e recuperação de senha. | Computador e celular |
+| Site e acesso | Visitante e todas as contas | ~~Site da academia, pedido de aula experimental, login, primeiro acesso e recuperação de senha.~~ _Atualização:_ Login, primeiro acesso e recuperação de senha, e a landing page da plataforma. | Computador e celular |
 
-A gestão é o centro: quase tudo nasce nela. O portal mostra ao aluno e ao responsável o que a gestão registrou, e o site apresenta a academia a quem ainda não é aluno.
+A gestão é o centro: quase tudo nasce nela. ~~O portal mostra ao aluno e ao responsável o que a gestão registrou, e o site apresenta a academia a quem ainda não é aluno.~~ _Atualização:_ O portal mostra ao aluno e ao responsável o que a gestão registrou, e a landing page da plataforma apresenta o sistema a quem ainda não o usa.
 
 **Este repositório tem só o front-end.** As regras de negócio, os cálculos, as permissões, a auditoria, o envio de e-mail e o pagamento são do servidor, que fica fora daqui.
 
@@ -49,7 +51,7 @@ Os guias de desenvolvimento estão em [`docs/`](docs/README.md), em Markdown, co
 | [Visão geral](docs/visao-geral.md) | O sistema em poucos minutos, a ordem de construção e as decisões em aberto. |
 | [Gestão](docs/gestao/README.md) | 25 fases, 183 requisitos funcionais e 144 regras de negócio. |
 | [Portal do aluno](docs/portal/README.md) | 8 fases, 57 requisitos funcionais e 56 regras de negócio. |
-| [Site e acesso](docs/site-e-acesso/README.md) | 6 fases, 61 requisitos funcionais e 59 regras de negócio. |
+| [Site e acesso](docs/site-e-acesso/README.md) | ~~6 fases, 61 requisitos funcionais e 59 regras de negócio.~~ _Atualização:_ 3 fases de acesso e a landing page da plataforma (#96); as fases do site público saíram do escopo. |
 
 Para trabalhar em uma tela, abra o arquivo da fase. Ele traz o objetivo, as dependências, as telas, os requisitos, as regras e a lista “Pronto quando”.
 
