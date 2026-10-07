@@ -106,3 +106,9 @@ Achados:
 - Base `dev` não avançou desde a verificação; regressão não repetida.
 
 Refs #9
+
+## Atualização — decisão da #15 (07/10/2026)
+
+Nota acrescentada depois da entrega; o texto acima não foi alterado.
+
+- Os tipos de `fixtures/types.ts` e os formatos dos recursos, tratados como provisórios (P4), passam a ser o primeiro rascunho do contrato. Quando o OpenAPI existir, os tipos saem dele e os fixtures são conferidos contra ele.

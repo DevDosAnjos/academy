@@ -1,6 +1,7 @@
 import type { Profile } from '../../shared/lib/session.ts'
 
-// Provisional shapes (contract is P4). Money in cents, dates ISO 8601.
+// First draft of the contract (decision #15; OpenAPI will describe it).
+// Money in cents, dates ISO 8601.
 export type AccountStatus = 'ativa' | 'inativa' | 'convite-pendente'
 
 export type Account = {

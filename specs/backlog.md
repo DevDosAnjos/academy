@@ -83,7 +83,6 @@ Notas: as issues #83 a #85 (revisão) não declaram dependência, mas só fazem 
 | P1 | Confirmar todas as propostas [sugestão] como estão nos guias (issue #12) | Adotar a proposta da issue | nenhum | Vale o que está escrito no guia. |
 | P2 | Como entregar o site público no Vite: pré-renderizar (proposta), app único com meta fixa no HTML ou projeto separado? (issue #13) | Adotar a proposta da issue | nenhum | App único com título, descrição e imagem fixos no HTML inicial e código de cada área carregado em separado. |
 | P3 | Qual o endereço do site e dos endereços de login, gestão e portal? (issue #14) | Adotar a proposta da issue | nenhum | Um endereço só, com o site na página inicial. |
-| P4 | Onde fica o back-end, quem o desenvolve e como o contrato da API é combinado? (issue #15) | Adotar a proposta da issue | nenhum | Front contra mocks MSW; os handlers viram o mapa da API. |
 | P5 | Prazos de convite, sessão e link de senha; exigências da senha; tentativas e bloqueio; suporte nas telas de erro (issue #19) | Adotar a proposta da issue | nenhum | Valores provisórios; senha 8+ com letra e número; 5 tentativas e 15 min. |
 | P6 | Textos, números, modalidades do site e como fica o site desligado (issue #23) | Adotar a proposta da issue | nenhum | Conteúdo fixo em um só lugar, só Infantil/Juvenil/Adulto; sem números de exemplo; site desligado mostra nome, contato e Entrar. |
 | P7 | Perfis de acesso editáveis? (issue #28) | Adotar a proposta da issue | nenhum | Dois perfis fixos: Administrador e Professor. |
