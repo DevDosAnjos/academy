@@ -8,7 +8,7 @@ Sprint liberada: Sprint 00. Só o dono libera a seguinte.
 |---|---|---|---|---|---|---|
 | 2 | [Preparação] Criar o projeto: Vite, React, TypeScript e shadcn/ui | issue #2 | Sprint 00 | — | agente | feito |
 | 3 | [Preparação] Base visual do canvas em código: tokens e tema | issue #3 | Sprint 00 | — | agente | feito |
-| 4 | [Preparação] Rotas, áreas e proteção por sessão e perfil | issue #4 | Sprint 00 | — | agente | a fazer |
+| 4 | [Preparação] Rotas, áreas e proteção por sessão e perfil | issue #4 | Sprint 00 | — | agente | feito |
 | 5 | [Preparação] Cliente da API e contrato com o back-end | issue #5 | Sprint 00 | — | agente | a fazer |
 | 6 | [Preparação] Mocks da API com MSW (Mock Service Worker) | issue #6 | Sprint 00 | — | agente | a fazer |
 | 7 | [Preparação] Formulários, validação e formatos brasileiros | issue #7 | Sprint 00 | — | agente | a fazer |
