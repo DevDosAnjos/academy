@@ -13,7 +13,7 @@ Sprint liberada: Sprint 00. Só o dono libera a seguinte.
 | 6 | [Preparação] Mocks da API com MSW (Mock Service Worker) | issue #6 | Sprint 00 | — | agente | feito |
 | 7 | [Preparação] Formulários, validação e formatos brasileiros | issue #7 | Sprint 00 | — | agente | feito |
 | 8 | [Preparação] Testes e esteira de qualidade (publicação adiada, ver "Trabalho adiado") | issue #8 | Sprint 00 | — | agente | feito |
-| 9 | [Preparação] Dados fictícios e contas de teste | issue #9 | Sprint 00 | — | agente | a fazer |
+| 9 | [Preparação] Dados fictícios e contas de teste | issue #9 | Sprint 00 | — | agente | feito |
 | 10 | [Preparação] Levar as decisões em aberto à academia | issue #10 | Sprint 00 | — | pessoa (academia) | a fazer |
 | 11 | [Design] Telas que faltam para a Sprint 01: base da gestão e login | issue #11 | Sprint 00 | — | pessoa (design) | a fazer |
 | 16 | [Gestão · F01] Base do sistema: acesso, menu e padrões de tela | issue #16 | Sprint 01 | 2, 3, 4, 5 | agente | a fazer |
