@@ -84,4 +84,13 @@ const routes: RouteObject[] = [
   },
 ]
 
+// Example list, development only (item #5); not part of the production build.
+if (import.meta.env.DEV) {
+  routes[0].children!.push({
+    path: '/dev/api-exemplo',
+    handle: { title: 'API (exemplo)' },
+    ...page(() => import('@/shared/api/example-list')),
+  })
+}
+
 export const router = createBrowserRouter(routes)
