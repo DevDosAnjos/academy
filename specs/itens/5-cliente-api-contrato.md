@@ -161,6 +161,6 @@ Limitações: CA6 (401 levando a `/entrar?voltar=/gestao` de ponta a ponta) e o 
 
 Nota acrescentada depois da entrega; o texto acima não foi alterado.
 
-- O contrato deixa de ser "provisório com o back-end": o back-end é um projeto separado e parte dos payloads que o front define (tipos e handlers do MSW). O contrato será descrito em OpenAPI, mantido neste repositório até o back-end começar. D3 e D6 passam a ter como destino os tipos gerados desse arquivo, que ainda não existe e não tem item no backlog.
+- O contrato deixa de ser "provisório com o back-end": o back-end é um projeto separado e parte dos payloads que o front define (tipos e handlers do MSW). O contrato será descrito em OpenAPI, mantido neste repositório até o back-end começar. D3 e D6 passam a ter como destino os tipos gerados desse arquivo, que ainda não existe; o item é o #95.
 - "Combinar o padrão com o back-end" e "obter o documento de contexto do projeto" (seção 1, fora do escopo, e última decisão) deixaram de ser pendências: o padrão é o de `types.ts`, e o documento não é pré-requisito.
 - A conferir quando se souber onde a API vai ficar: D2 e a suposição final (cookie `XSRF-TOKEN` lido com `document.cookie`, na mesma origem ou no mesmo site do app), porque o back-end é um projeto separado.

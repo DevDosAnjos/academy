@@ -16,6 +16,7 @@ Sprint liberada: Sprint 00. Só o dono libera a seguinte.
 | 9 | [Preparação] Dados fictícios e contas de teste | issue #9 | Sprint 00 | — | agente | feito |
 | 10 | [Preparação] Levar as decisões em aberto à academia | issue #10 | Sprint 00 | — | pessoa (academia) | a fazer |
 | 11 | [Design] Telas que faltam para a Sprint 01: base da gestão e login | issue #11 | Sprint 00 | — | pessoa (design) | a fazer |
+| 95 | [Preparação] Contrato da API em OpenAPI e tipos gerados | issue #95 | Sprint 00 | 5, 6 | agente | a fazer |
 | 16 | [Gestão · F01] Base do sistema: acesso, menu e padrões de tela | issue #16 | Sprint 01 | 2, 3, 4, 5 | agente | a fazer |
 | 17 | [Site e acesso · F01] Acesso › Login e sessão | issue #17 | Sprint 01 | 4, 5, 16 | agente | a fazer |
 | 18 | [Design] Telas que faltam para a Sprint 02: academia e site no ar | issue #18 | Sprint 01 | — | pessoa (design) | a fazer |
